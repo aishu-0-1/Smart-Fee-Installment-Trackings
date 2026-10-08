@@ -1,4 +1,16 @@
 <div class="login-box">
+    function login() {
+    let usn = document.getElementById("usn").value;
+    let password = document.getElementById("password").value;
+
+    if (usn === "003" && password === "1234") {
+        document.getElementById("loginMessage").innerHTML =
+            "✅ Login successful!";
+    } else {
+        document.getElementById("loginMessage").innerHTML =
+            "❌ Invalid Student ID or Password.";
+    }
+}
     <h2>Student Login</h2>
 
     <input type="text" id="usn" placeholder="Enter Student ID">
