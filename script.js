@@ -4,8 +4,11 @@
     let password = document.getElementById("password").value;
 
     if (usn === "003" && password === "1234") {
-        document.getElementById("loginMessage").innerHTML =
-            "✅ Login successful!";
+    document.getElementById("loginMessage").innerHTML =
+        "✅ Login successful!";
+
+    document.getElementById("dashboard").style.display = "block";
+}
     } else {
         document.getElementById("loginMessage").innerHTML =
             "❌ Invalid Student ID or Password.";
